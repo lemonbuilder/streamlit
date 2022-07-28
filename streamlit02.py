@@ -1,5 +1,5 @@
-!pip install folium
-!pip install streamlit_folium
+pip install folium
+pip install streamlit_folium
 
 
 import streamlit as st 
