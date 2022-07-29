@@ -3,6 +3,8 @@ import streamlit as st
 from streamlit_folium import st_folium
 import folium
 
+st.title("hello, folium")
+
 # center on Liberty Bell, add marker
 m = folium.Map(location=[39.949610, -75.150282], zoom_start=16)
 folium.Marker(
@@ -12,4 +14,4 @@ folium.Marker(
 ).add_to(m)
 
 # call to Folium map in Streamlit
-st_data = st_folium(m, width = 725)
+st_data = st_folium(m, width = 500)
