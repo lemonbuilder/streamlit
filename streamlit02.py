@@ -1,7 +1,3 @@
-$ pip install folium
-$ pip install streamlit_folium
-
-
 import streamlit as st 
 from streamlit_folium import st_folium
 import folium
