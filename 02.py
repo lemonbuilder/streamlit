@@ -22,7 +22,7 @@ folium.Marker(
     ).add_to(m)
 
 # circle
-folium.Circle(radius=50,
+folium.Circle(radius=500,
     location=[37.492151, 127.030949],
     color='#31ccb2',
     fill=True,
