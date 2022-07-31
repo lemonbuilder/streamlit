@@ -11,9 +11,6 @@ st.title("hello world")
 ## all_symbols = source.symbol.unique()
 multi_select = st.multiselect('Please select!',
     ['A', 'B', 'C', 'D'])
-	st.write('You selected:', multi_select)
-
-
 
 
 # center on, add marker
