@@ -33,14 +33,14 @@ file_path = "code10.txt"
 
 content = read_file(bucket_name, file_path)
 
+'''
 for line in content.strip().split("\n"):
     name, pet = line.split(",")
     st.write(f"{name} has a :{pet}:")
-    
-
 '''
+
 data = []
-file = open(content, "r", encoding="cp949")
+file = content
 while True:
     line = file.readline()
     line = line.split()
@@ -76,4 +76,4 @@ if st.button('PNU로 변경') :
     con = st.container()
     con.caption('PNU')
     con.write(output)
-'''
+
