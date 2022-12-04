@@ -39,17 +39,16 @@ for line in content.strip().split("\n"):
     t = text[:-1]
     data.append(t)
     
+num = '{:010d}'.format(0)
 for q in range(len(data)):
     if a in data[q]:
         if b in data[q]:
             if c in data[q]:
                 if d == '' or d == None :
                     num = data[q][0]
-                elif:
+                else :
                     if d in data[q]:
                         num = data[q][0]
-                else :
-                    num = '{:010d}'.format(0)
                         
 if e == '' or e == None:
     num_e = '0'
