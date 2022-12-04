@@ -33,22 +33,12 @@ file_path = "code10.txt"
 
 content = read_file(bucket_name, file_path)
 
-'''
-for line in content.strip().split("\n"):
-    name, pet = line.split(",")
-    st.write(f"{name} has a :{pet}:")
-'''
-
 data = []
-file = content
-while True:
-    #line = file.readline()
-    line = line.split()
-    t = line[:-1]
+for line in content.strip().split("\n"):
+    text = line.split()
+    t = text[:-1]
     data.append(t)
-    if not line:
-        break
-file.close()
+    
 
 for q in range(len(data)):
     if a in data[q]:
