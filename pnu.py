@@ -39,7 +39,6 @@ for line in content.strip().split("\n"):
     t = text[:-1]
     data.append(t)
     
-num = '{:010d}'.format(0)
 for q in range(len(data)):
     if a in data[q]:
         if b in data[q]:
@@ -49,8 +48,13 @@ for q in range(len(data)):
                 else:
                     if d in data[q]:
                         num = data[q][0]
-
-if e == '산':
+                        
+if num == None:
+    num = '{:010d}'.format(0)
+                        
+if e == '' or e == None:
+    num_e = '0'
+elif e == '산':
     num_e = '2'
 else:
     num_e = '1'
