@@ -48,9 +48,8 @@ for q in range(len(data)):
                 else:
                     if d in data[q]:
                         num = data[q][0]
-                        
-if a == '' and b == '' and c == '' and d == '':
-    num = '{:010d}'.format(0)
+    else :
+        num = '{:010d}'.format(0)
                         
 if e == '' or e == None:
     num_e = '0'
