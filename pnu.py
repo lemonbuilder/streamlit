@@ -39,7 +39,7 @@ for line in content.strip().split("\n"):
     t = text[:-1]
     data.append(t)
     
-
+num = '{:010d}'.format(0)
 for q in range(len(data)):
     if a in data[q]:
         if b in data[q]:
@@ -55,8 +55,15 @@ if e == '산':
 else:
     num_e = '1'
 
-num_f = '{:04d}'.format(int(f))
-num_g = '{:04d}'.format(int(g))
+if f == None :
+    num_f = '{:04d}'.format(0)
+else:
+    num_f = '{:04d}'.format(int(f))
+
+if g == None :
+    num_g = '{:04d}'.format(0)
+else:
+    num_g = '{:04d}'.format(int(g))
 
 output = num + num_e + num_f + num_g
 output = int(output)
