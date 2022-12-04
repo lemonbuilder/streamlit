@@ -72,8 +72,7 @@ else:
 output = num + num_e + num_f + num_g
 
 
-if st.button('PNU로 변경') :
+if st.button('PNU로 변환') :
     con = st.container()
     con.caption('PNU')
     con.subheader(output)
-
