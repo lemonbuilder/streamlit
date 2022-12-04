@@ -70,11 +70,10 @@ else:
     num_g = '{:04d}'.format(int(g))
 
 output = num + num_e + num_f + num_g
-#output = int(output)
 
 
 if st.button('PNU로 변경') :
     con = st.container()
     con.caption('PNU')
-    con.write(output)
+    con.subheader(.write(output))
 
