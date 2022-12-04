@@ -49,7 +49,7 @@ for q in range(len(data)):
                     if d in data[q]:
                         num = data[q][0]
                         
-if num == None:
+if num == '' or num == None:
     num = '{:010d}'.format(0)
                         
 if e == '' or e == None:
