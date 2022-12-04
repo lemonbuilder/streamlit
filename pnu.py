@@ -11,8 +11,8 @@ b = st.text_input("시/군/구: ")
 c = st.text_input("읍/면/동: ")
 d = st.text_input("리: ")
 e = st.text_input("일반/산: ")
-f = st.text_input("본번(4자리): ")
-g = st.text_input("부번(4자리): ")
+f = st.text_input("본번: ")
+g = st.text_input("부번: ")
 
 # Create API client.
 credentials = service_account.Credentials.from_service_account_info(
@@ -33,7 +33,12 @@ file_path = "code10.txt"
 
 content = read_file(bucket_name, file_path)
 
+for line in content.strip().split("\n"):
+    name, pet = line.split(",")
+    st.write(f"{name} has a :{pet}:")
+    
 
+'''
 data = []
 file = open(content, "r", encoding="cp949")
 while True:
@@ -68,8 +73,7 @@ output = int(output)
 
 
 if st.button('PNU로 변경') :
-    # 함수실행
-    # pnu = 함수 output
     con = st.container()
     con.caption('PNU')
     con.write(output)
+'''
