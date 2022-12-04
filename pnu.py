@@ -75,5 +75,6 @@ output = num + num_e + num_f + num_g
 
 if st.button('PNU로 변환') :
     con = st.container()
+    con.markdown('---')
     con.caption('PNU')
     con.subheader(output)
