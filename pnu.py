@@ -6,7 +6,7 @@ from google.cloud import storage
 
 st.subheader("PNU Making Machine")
 
-st.info('PNU(필지고유번호)는 공간데이터 상에서 필지마다 고유하게 부여된 번호로, 필지정보를 확인할 때 사용합니다.')
+st.info('PNU(필지고유번호)는 공간데이터 상에서 필지마다 고유하게 부여된 번호로, 필지별 정보확인에 사용합니다.')
 
 a = st.text_input("시/도: ")
 b = st.text_input("시/군/구: ")
