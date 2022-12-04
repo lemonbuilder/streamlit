@@ -25,7 +25,7 @@ client = storage.Client(credentials=credentials)
 @st.experimental_memo(ttl=600)
 def read_file(bucket_name, file_path):
     bucket = client.bucket(bucket_name)
-    content = bucket.blob(file_path).download_as_string().decode("utf-8")
+    content = bucket.blob(file_path).download_as_string().decode("cp949")
     return content
 
 bucket_name = "loosebooster"
@@ -54,7 +54,7 @@ for q in range(len(data)):
     if a in data[q]:
         if b in data[q]:
             if c in data[q]:
-                if d == '' :
+                if d == '' or d == None :
                     num = data[q][0]
                 else:
                     if d in data[q]:
