@@ -78,5 +78,4 @@ st.markdown('---')
 if st.button('PNU로 변환') :
     con = st.container()
     con.caption('PNU')
-    con.markdown('---')
     con.subheader(output)
