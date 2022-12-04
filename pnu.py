@@ -45,11 +45,11 @@ for q in range(len(data)):
             if c in data[q]:
                 if d == '' or d == None :
                     num = data[q][0]
-                else:
+                elif:
                     if d in data[q]:
                         num = data[q][0]
-    else :
-        num = '{:010d}'.format(0)
+                else :
+                    num = '{:010d}'.format(0)
                         
 if e == '' or e == None:
     num_e = '0'
