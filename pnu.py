@@ -55,12 +55,12 @@ if e == '산':
 else:
     num_e = '1'
 
-if f == None :
+if f == '' or f == None :
     num_f = '{:04d}'.format(0)
 else:
     num_f = '{:04d}'.format(int(f))
 
-if g == None :
+if g == '' or g == None :
     num_g = '{:04d}'.format(0)
 else:
     num_g = '{:04d}'.format(int(g))
