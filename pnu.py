@@ -42,7 +42,7 @@ for line in content.strip().split("\n"):
 data = []
 file = content
 while True:
-    line = file.readline()
+    #line = file.readline()
     line = line.split()
     t = line[:-1]
     data.append(t)
